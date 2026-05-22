@@ -26,33 +26,6 @@ The project can be used in two ways:
 - PDF encryption and decryption using qpdf.
 - Batch conversion by folder.
 
-## Project structure
-
-~~~text
-uconvert/
-  cli.py
-  registry.py
-  runner.py
-  converters/
-    documents.py
-    ebooks.py
-    ghostscript.py
-    gis.py
-    images.py
-    imagemagick.py
-    media.py
-    pdf_tools.py
-    qpdf_tools.py
-
-tests/
-  audiovideo/
-  book/
-  documentos/
-  images/
-  map/
-  qpdf/
-~~~
-
 ## Local installation
 
 Create a virtual environment:
