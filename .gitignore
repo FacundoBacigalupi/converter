@@ -1,27 +1,44 @@
-# Virtual environment
+# Virtual environments
 .venv/
 venv/
+env/
 
 # Python cache
 __pycache__/
-*.pyc
-*.pyo
-*.pyd
+*.py[cod]
+*$py.class
 
-# Build / packaging
-dist/
+# Python build/package files
 build/
+dist/
 *.egg-info/
+.eggs/
 
-# IDE
+# Test/cache tools
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# IDE/editor
 .vscode/
 .idea/
 
-# OS
+# OS files
 .DS_Store
 Thumbs.db
 
-# Generated test outputs
+# Logs/temp
+*.log
+*.tmp
+*.bak
+
+# Environment/local config
+.env
+.env.*
+
+# Generated conversion outputs
 tests/**/out/
 tests/**/output/
 tests/**/outputs/
@@ -29,10 +46,3 @@ tests/**/converted/
 tests/**/pages/
 tests/**/tmp/
 tests/**/temp/
-
-# Temporary files
-*.tmp
-*.log
-
-# Local environment files
-.env

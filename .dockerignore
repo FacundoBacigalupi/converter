@@ -1,0 +1,15 @@
+.venv/
+venv/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.git/
+dist/
+build/
+*.egg-info/
+tests/**/out/
+tests/**/output/
+tests/**/outputs/
+tests/**/converted/
+tests/**/pages/
