@@ -57,11 +57,6 @@ def require_tool(*names: str) -> str:
         "ogrinfo": [
             r"C:\OSGeo4W\bin\ogrinfo.exe",
             r"C:\Program Files\QGIS 3.44.8\bin\ogrinfo.exe",
-            r"C:\Program Files\QGIS 3.44.0\bin\ogrinfo.exe",
-            r"C:\Program Files\QGIS 3.42.0\bin\ogrinfo.exe",
-            r"C:\Program Files\QGIS 3.40.0\bin\ogrinfo.exe",
-            r"C:\Program Files\QGIS 3.38.0\bin\ogrinfo.exe",
-            r"C:\Program Files\QGIS 3.36.0\bin\ogrinfo.exe",
         ],
         "qpdf": [
             r"C:\Program Files\qpdf 12.3.2\bin\qpdf.exe",

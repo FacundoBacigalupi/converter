@@ -182,9 +182,9 @@ def pandoc_convert(input_path: Path, output_path: Path, timeout: int = 120) -> N
 
         if not typst_path:
             raise ConversionError(
-                "PDF conversion requires Typst or LaTeX. "
-                "Typst seems installed, but this terminal cannot find it. "
-                "Close PowerShell, open it again, activate the venv, and try: typst --version"
+                "Markdown/HTML to PDF requires a PDF engine for Pandoc. "
+                "Typst was not found in this terminal PATH. "
+                "Install Typst or make sure it is available by running: typst --version"
             )
 
         command.extend(["--pdf-engine", typst_path])
