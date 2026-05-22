@@ -57,12 +57,6 @@ Show supported formats:
 uconvert formats
 ~~~
 
-Show version:
-
-~~~powershell
-uconvert version
-~~~
-
 ## Image examples
 
 ~~~powershell

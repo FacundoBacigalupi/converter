@@ -4,7 +4,6 @@ import argparse
 import sys
 from pathlib import Path
 
-from uconvert import __version__
 from uconvert.registry import convert_file, supported_formats_text
 from uconvert.runner import ConversionError
 from uconvert.converters.images import images_to_pdf
@@ -24,11 +23,6 @@ def build_parser() -> argparse.ArgumentParser:
     )
 
     subparsers = parser.add_subparsers(dest="command", required=True)
-
-    subparsers.add_parser(
-        "version",
-        help="Show uconvert version."
-    )
 
     convert_parser = subparsers.add_parser(
         "convert",
@@ -341,9 +335,6 @@ def main() -> None:
                 recursive=args.recursive,
                 timeout=args.timeout,
             )
-
-        elif args.command == "version":
-            print(f"uconvert {__version__}")
 
         elif args.command == "formats":
             print(supported_formats_text())
