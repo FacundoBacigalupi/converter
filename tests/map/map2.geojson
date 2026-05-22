@@ -1,0 +1,10 @@
+{
+"type": "FeatureCollection",
+"name": "Placemarks",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
+"features": [
+{ "type": "Feature", "properties": { "Name": "Simple placemark", "description": "Attached to the ground. Intelligently places itself at the\n          height of the underlying terrain.", "tessellate": -1, "extrude": 0, "visibility": -1 }, "geometry": { "type": "Point", "coordinates": [ -122.082203542568294, 37.422289901402507, 0.0 ] } },
+{ "type": "Feature", "properties": { "Name": "Floating placemark", "description": "Floats a defined distance above the ground.", "altitudeMode": "relativeToGround", "tessellate": -1, "extrude": 0, "visibility": 0 }, "geometry": { "type": "Point", "coordinates": [ -122.084075, 37.422003361214102, 50.0 ] } },
+{ "type": "Feature", "properties": { "Name": "Extruded placemark", "description": "Tethered to the ground by a customizable\n          \"tail\"", "altitudeMode": "relativeToGround", "tessellate": -1, "extrude": 1, "visibility": 0 }, "geometry": { "type": "Point", "coordinates": [ -122.085766700618294, 37.421569278675527, 50.0 ] } }
+]
+}
